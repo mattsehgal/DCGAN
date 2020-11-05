@@ -2,7 +2,7 @@
 """
 Created on Fri Oct 23 19:41:40 2020
 
-@author: Matt
+@author: Matt Sehgal
 """
 
 import torch
