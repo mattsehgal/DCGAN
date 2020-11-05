@@ -2,7 +2,7 @@
 """
 Created on Fri Oct 23 18:45:50 2020
 
-@author: Matt
+@author: Matt Sehgal
 """
 
 from IPython import display
@@ -49,7 +49,6 @@ test_noise = net_trainer.gen_noise(num_test_samples)
 logger = Logger(model_name='DCGAN', data_name=data_name)
 plotter = Plotter(num_epochs, num_batches)
 
-
 for epoch in range(num_epochs):
     for n_batch, (real_batch,_) in enumerate(data_loader):
         
@@ -95,7 +94,6 @@ for epoch in range(num_epochs):
             
             # Plotting
             plotter.plot().show()
-            
             
         # Model Checkpoints
         logger.save_models(generator, discriminator, epoch)
